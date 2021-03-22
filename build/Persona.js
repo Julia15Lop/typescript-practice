@@ -52,12 +52,13 @@ var Persona = /** @class */ (function () {
         console.log("| --Direcciones-- ");
         // Mostrar direcciones
         for (var i = 0; i < this._direcciones.length; i++) {
-            console.log("| " + this._direcciones[i].mostrarDireccion());
+            console.log("| Dir " + (i + 1));
+            console.log("| " + this.direcciones[i].mostrarDireccion());
         }
         // Mostrar mails
         console.log("| --Mails-- ");
         for (var i = 0; i < this._mails.length; i++) {
-            console.log("| " + this._mails[i].mostrarMail());
+            console.log("| " + this.mails[i].mostrarMail());
         }
         // Mostrar Telefonos
         console.log("| --Teléfonos-- ");
@@ -68,3 +69,4 @@ var Persona = /** @class */ (function () {
     return Persona;
 }());
 exports.Persona = Persona;
+//# sourceMappingURL=Persona.js.map

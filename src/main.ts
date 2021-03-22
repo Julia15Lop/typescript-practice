@@ -30,18 +30,24 @@ let dir5: Direccion = new Direccion("Titus Loop", 80, 12, "C", 8867, "Omaha", "O
 /* Creación de tres personas */
 let date1: Date = new Date("1965-03-12");
 var direcciones1: Direccion[] = [dir1];
+var mails1: Mail[] = [mail1];
+var telefonos1: Telefono[] = [phone1, mobile1];
 let per1: Persona = new Persona("Pepe", "Rodriguez Pérez", 56, "045678545C", date1, "verde", "hombre", direcciones1,
-  [mail1], [phone1, mobile1], ["Entregar trabajo.", "Ir al supermercado"]);
+  mails1, telefonos1, ["Entregar trabajo.", "Ir al supermercado"]);
             
 let date2: Date = new Date("1995-10-21");
 var direcciones2: Direccion[] = [dir2, dir3];
+var mails2: Mail[] = [mail2];
+var telefonos2: Telefono[] = [phone2, mobile2];
 let per2: Persona = new Persona("Ana", "Bueno Bernal", 25, "098458545J", date2, "morado", "mujer", direcciones2,
-  [mail2], [phone2, mobile2], ["Comprar manzanas"]);
+  mails2, telefonos2, ["Comprar manzanas"]);
 
 let date3: Date = new Date("1997-07-21");
 var direcciones3: Direccion[] = [dir4, dir5];
+var mails3: Mail[] = [mail3];
+var telefonos3: Telefono[] = [phone3, mobile3];
 let per3: Persona = new Persona("Natalia", "Arrese Puente", 23, "078458541H", date3, "azul", "mujer", direcciones3,
-  [mail3], [phone3, mobile3], ["Entregar práctica final"]);
+  mails3, telefonos3, ["Entregar práctica final"]);
 
 let personas: Persona[] = [];
 personas = [per1, per2, per3];
@@ -54,7 +60,6 @@ for (let i = 0; i < personas.length; i++) {
   personas[i].mostrarInfo();
   console.log(" ");
 }
-
 
 /* Buscar persona por DNI y actualizar atributos */
 console.log("|      ACTUALIZANDO DATOS PERSONA...      |");

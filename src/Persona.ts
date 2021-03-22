@@ -58,20 +58,21 @@ export class Persona {
     console.log("| --Direcciones-- ");
     // Mostrar direcciones
     for (let i = 0; i < this._direcciones.length; i++) {
-      console.log ("| " + this._direcciones[i].mostrarDireccion());
+      console.log("| Dir " + (i+1));
+      console.log ("| " + this.direcciones[i].mostrarDireccion());
     }
     // Mostrar mails
     console.log("| --Mails-- ");
     for (let i = 0; i < this._mails.length; i++) {
-      console.log("| " + this._mails[i].mostrarMail());
+      
+      console.log("| " + this.mails[i].mostrarMail());
     }
 
     // Mostrar Telefonos
     console.log("| --Teléfonos-- ");
     for (let i = 0; i < this._telefonos.length; i++) {
-      console.log("| " + this._telefonos[i].mostrarTelefono());
+      console.log("| " + this.telefonos[i].mostrarTelefono());
     }
-    
   }
 
 }

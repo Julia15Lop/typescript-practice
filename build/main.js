@@ -26,13 +26,19 @@ var dir5 = new Direccion_1.Direccion("Titus Loop", 80, 12, "C", 8867, "Omaha", "
 /* Creación de tres personas */
 var date1 = new Date("1965-03-12");
 var direcciones1 = [dir1];
-var per1 = new Persona_1.Persona("Pepe", "Rodriguez Pérez", 56, "045678545C", date1, "verde", "hombre", direcciones1, [mail1], [phone1, mobile1], ["Entregar trabajo.", "Ir al supermercado"]);
+var mails1 = [mail1];
+var telefonos1 = [phone1, mobile1];
+var per1 = new Persona_1.Persona("Pepe", "Rodriguez Pérez", 56, "045678545C", date1, "verde", "hombre", direcciones1, mails1, telefonos1, ["Entregar trabajo.", "Ir al supermercado"]);
 var date2 = new Date("1995-10-21");
 var direcciones2 = [dir2, dir3];
-var per2 = new Persona_1.Persona("Ana", "Bueno Bernal", 25, "098458545J", date2, "morado", "mujer", direcciones2, [mail2], [phone2, mobile2], ["Comprar manzanas"]);
+var mails2 = [mail2];
+var telefonos2 = [phone2, mobile2];
+var per2 = new Persona_1.Persona("Ana", "Bueno Bernal", 25, "098458545J", date2, "morado", "mujer", direcciones2, mails2, telefonos2, ["Comprar manzanas"]);
 var date3 = new Date("1997-07-21");
 var direcciones3 = [dir4, dir5];
-var per3 = new Persona_1.Persona("Natalia", "Arrese Puente", 23, "078458541H", date3, "azul", "mujer", direcciones3, [mail3], [phone3, mobile3], ["Entregar práctica final"]);
+var mails3 = [mail3];
+var telefonos3 = [phone3, mobile3];
+var per3 = new Persona_1.Persona("Natalia", "Arrese Puente", 23, "078458541H", date3, "azul", "mujer", direcciones3, mails3, telefonos3, ["Entregar práctica final"]);
 var personas = [];
 personas = [per1, per2, per3];
 console.log("|          MOSTRANDO PERSONAS CREADAS      |");
@@ -60,3 +66,4 @@ for (var i = 0; i < personas.length; i++) {
         persona.mostrarInfo();
     }
 }
+//# sourceMappingURL=main.js.map
